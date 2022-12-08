@@ -1,0 +1,28 @@
+##### VGG19 #####
+style_layer_names = [
+    "block1_conv1",
+    "block2_conv1",
+    "block3_conv1",
+    "block4_conv1",
+    "block5_conv1"]
+content_layer_name = "block5_conv2"
+
+##### Resnet 50 #####
+
+## V1
+style_layer_names = [
+    "conv2_block1_1_conv",
+    "conv2_block2_1_conv",
+    "conv2_block3_1_conv"
+content_layer_name = "conv5_block3_2_conv"
+
+
+
+##v2
+style_layer_names = [
+    "conv2_block3_3_conv",
+    "conv3_block4_3_conv",
+    "conv4_block6_3_conv"
+]
+# The layer to use for the content loss.
+content_layer_name = "conv5_block3_3_conv"
